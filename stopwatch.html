@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
-</head>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+   <link rel="icon" type= "png "href="favicon-16x16.png" >
+</head> 
 <body>
     <section>
-        <p id="countDown">0</p>
+
+        <div class="main">
+            <h1 id="countDown">0</h1>
+        </div>
         <div class="buttons">
-            <button class="start_btn">Start</button>
-            <button class="reset_btn">Reset</button>
-            <button class="stop_btn">Stop</button>
-            <button class="time_btn">Get Time</button>
+            <button class="start_btn"><i class="fa-solid fa-play"></i>
+                <span class="btn_text">Play</span></button>
+            <button class="reset_btn"> <i class="fa-solid fa-trash-can-arrow-up"></i>
+                <span class="btn_text">Reset</span></button>
+            <button class="stop_btn"><i class="fa-solid fa-pause"></i>
+                <span class="btn_text">Stop</span></button>
+            <!-- <button class="time_btn">Get Time</button>
             <button class="clear_btn">Clear Time</button>
         </div>
-        <div class="resetValue"></div>
+        <div class="resetValue"></div> -->
     </section>
     <script src="stopwatch.js"></script>
 </body>

@@ -1,5 +1,5 @@
 const countDownElement = document.getElementById("countDown");
-const resetValueElement = document.querySelector(".resetValue");
+// const resetValueElement = document.querySelector(".resetValue");
 let startCount = 0;
 let intervalId;
 
@@ -11,14 +11,24 @@ const startTimer = () =>{
     };
 
 const stopTimer = () =>{ 
-    clearInterval(intervalId);
+    clearInterval(intervalId); //stop the timer 
 };
 
 const resetTimer = () =>{
     startCount = 0;
     countDownElement.innerText = startCount;
-    clearInterval(intervalId);
+    clearInterval(intervalId); //after hit zero completely stop
 };
+
+// const showStopValue = () =>{
+//     const newPara = document.createElement("p");
+//     newPara.innerText = `The stop time is ${startCount -1}`;
+//     resetValueElement.appendChild(newPara);
+// }
+
+// const clearTimeValue = () =>{
+//     resetValueElement.innerHTML = "";
+// }
 
 document
 .querySelector(".start_btn")
